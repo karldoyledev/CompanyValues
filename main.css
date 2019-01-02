@@ -1,0 +1,237 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    background-color: #f5f5f5;
+    margin: 0px;
+}
+
+.cv-card-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.cv-card {
+    height: 350px;
+    width: 350px;
+    margin: 20px 0px;
+}
+
+.cv-card--skill-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cv-card--skill-back {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+.cv-card--padding
+{
+    padding:10px;
+}
+
+.cv-card__logo {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.cv-card__skill-title
+{
+    font-size:14px;
+    font-weight:700;
+}
+
+.cv-card__skill-list
+{
+    font-size:14px;
+    font-weight:500;
+    padding-left:15px;
+}
+
+.cv-card__desc {
+    text-align: center;
+}
+
+.cv-hero {
+    display: block;
+    background: url('./assets/circuitboard.jpg');
+    background-size: 100%;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.cv-hero__title {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.cv-hero__subtitle {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cv-container
+{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.cv-chip
+{
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.cv-chip:hover
+{
+    color: white;
+}
+
+.cv-toolbar {
+    background-color: white;
+    color: black;
+    height: 60px;
+}
+
+.cv-tech-stack {
+    border: black;
+    border-style: double;
+    padding: 1px;
+    /* vertical-align:middle */
+    /*margin-top: -7px;  fix this ugly hack */
+    color: rgb(212, 33, 33);
+}
+
+.cv-toolbar-tech-stack
+{
+    font-weight: 600;
+    color: red;
+}
+.cv-stack-container
+{
+    margin-top: 10px;
+    max-width: 1010px;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;    
+    flex-wrap: wrap;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cv-stack
+{
+    padding : 5px;
+    width: 300px;
+    color: white;
+    /* border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.cv-stack__items
+{
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.cv-stack__title
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: solid 1px;
+}
+.cv-chip-set
+{
+    justify-content: space-around;    
+}
+.cv-toolbar__section--center--align {
+    align-items: center;
+}
+
+.cv-stack-button
+{
+    cursor: pointer;
+    color: white; 
+    background-color: transparent;
+    padding: 0px 25px;
+    border-radius: 10px;
+    font-size : 14px;
+    margin: 2px;    
+}
+
+.cv-stack-button:hover
+{
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.cv-stack-button--selected
+{
+    color: black; 
+    background-color: white;
+
+}
+
+.cv-card__bottom
+{
+    height: 75px;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cv-card__positions
+{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cv-card__positions-open
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cv-card__positions-location
+{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.cv-card > * {
+    /* https://css-tricks.com/slightly-careful-sub-elements-clickable-things/ */    
+    pointer-events: none;
+  }
+

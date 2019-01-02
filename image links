@@ -1,0 +1,157 @@
+Coinbase https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-coinbase%2Flogo?alt=media&token=c2f02ea7-c86b-4234-9973-a0d2c685f531
+
+
+var logos = document.getElementsByClassName("thumbnail-logo");
+var companys = document.getElementsByClassName("thumbnail-company");
+var taglines = document.getElementsByClassName("thumbnail-tagline");
+for(var i=0; i < logos.length; i++)
+{
+    var style = logos[i].getAttribute("style")
+    console.log(style + ", " + companys[i].innerHTML + ", " + taglines[i].innerHTML);
+    console.log();
+}
+
+
+
+for(var i=0; i < companys.length; i++)
+{
+    
+}
+
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-webflow%2Flogo?alt=media&token=12decd85-9d32-40a4-8179-37708f3e81c4) no-repeat center center; background-size: cover;, Webflow, Responsive web design tool, CMS, and hosting platform
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fcarbon-five%2Flogo?alt=media&token=9593b35f-b3f9-4de6-b3a2-19d127a27cf2) no-repeat center center; background-size: cover;, Carbon Five, Agile Product Development Consultancy
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Frainforest%2Flogo?alt=media&token=59745ca2-aef8-4006-ad97-770ba9244b67) no-repeat center center; background-size: cover;, Rainforest QA, QA Testing at the Speed of Development
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-zeus%2Flogo?alt=media&token=0126de73-f4d5-450b-8212-44e7ac104f0c) no-repeat center center; background-size: cover;, Zeus, Modern Property Manager of Corporate Housing
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwove%2Flogo?alt=media&token=ddf2dd13-5f87-4e61-97c5-5a7c5285a345) no-repeat center center; background-size: cover;, Wove, Data Sharing Partnerships for Marketers
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fflatiron%2Flogo?alt=media&token=d036db7f-20ea-4792-9982-766844981eb8) no-repeat center center; background-size: cover;, Flatiron, Oncology Data for Accelerated Research
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-precious%2Flogo?alt=media&token=5e839e88-ecb0-4ea9-93ed-dfec440bcd8b) no-repeat center center; background-size: cover;, Precious, AI to Organize Your Photos of Your Kids
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fy-combinator%2Flogo?alt=media&token=c7dc79e8-cd0c-418a-b861-fca9de2acb3e) no-repeat center center; background-size: cover;, Y Combinator, Seed Funding for Startups
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fbitexpert%2Flogo?alt=media&token=5c512344-3939-4b3d-b645-eda9bb21fb7c) no-repeat center center; background-size: cover;, bitExpert AG, Custom Software Solutions
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Freddit%2Flogo?alt=media&token=62416502-9b20-4e80-b98b-5e7fbf288004) no-repeat center center; background-size: cover;, Reddit, Online Media and Content Platform
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fstitch-fix%2Flogo?alt=media&token=b694a870-ac1b-475a-97c4-a2f9e48eba56) no-repeat center center; background-size: cover;, Stitch Fix, Personal Style Service
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fgrammarly%2Flogo?alt=media&token=05ea705f-27a1-4a7d-865b-d4460ff1415a) no-repeat center center; background-size: cover;, Grammarly, AI-Powered Communications Assistant
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsignal%2Flogo?alt=media&token=5ee3fdb2-18f5-4693-9567-0a6fd8e5368d) no-repeat center center; background-size: cover;, Signal, Free, Open Source Private Messaging
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fcareguide%2Flogo?alt=media&token=8645b6ec-f0e4-4889-9469-d6f0d7aa36f1) no-repeat center center; background-size: cover;, CareGuide, Marketplace for Local Care Services
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fjane%2Flogo?alt=media&token=a2b6308e-f901-4f70-8c1b-917898e99a6e) no-repeat center center; background-size: cover;, Jane, Real-Time Cannabis Marketplace
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fdia%26co%2Flogo?alt=media&token=5d97ee1b-5cc7-4614-b0b9-9a025a0eb1c7) no-repeat center center; background-size: cover;, Dia&amp;Co, Subscription Styling Service for Sizes 14+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fvin65%2Flogo?alt=media&token=49e67e5e-739f-4864-b766-74e3eba7b5f0) no-repeat center center; background-size: cover;, WineDirect, Winery Fulfillment, Ecommerce, and POS
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-flexport%2Flogo?alt=media&token=637e4869-1dbf-416b-a631-3e6f1fda55a9) no-repeat center center; background-size: cover;, Flexport, Leading Software-Powered Freight Forwarder
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fatlas%2Flogo?alt=media&token=96a71cc1-3fa2-4a55-ae7a-95a7f999e539) no-repeat center center; background-size: cover;, Atlas, Custom Software Applications
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Finntopia%2Flogo?alt=media&token=68c5792c-d063-427a-877e-a4ec49522e4f) no-repeat center center; background-size: cover;, Inntopia, Travel Reservation Technology
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsamsara%2Flogo?alt=media&token=043cdb7d-5db6-40cb-a187-6697f2e6fa40) no-repeat center center; background-size: cover;, Samsara, IoT Sensors + Software for Operations
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-hipcamp%2Flogo?alt=media&token=1b0c6509-f1fe-4ab1-92a8-acbd0954fd28) no-repeat center center; background-size: cover;, Hipcamp, Find yourself outside
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fcreator-deck-media%2Flogo?alt=media&token=96d1e613-5443-4384-8a6e-332e075173cd) no-repeat center center; background-size: cover;, Creator Deck Media, Social Media SAAS Tool
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fbuildzoom%2Flogo?alt=media&token=0c1f74da-e15d-4ff0-b993-0177765560e9) no-repeat center center; background-size: cover;, BuildZoom, Marketplace for Construction and Remodeling
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fdev-xyz%2Flogo?alt=media&token=a19404b7-6060-4f0f-bcb5-a29a2cd385aa) no-repeat center center; background-size: cover;, Dev.xyz, Private Web Tech Incubator
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fyour-team%2Flogo?alt=media&token=798db0cb-6258-4d7e-a451-b20c0ae395b9) no-repeat center center; background-size: cover;, Digit, Smart Money Sidekick
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Froutific%2Flogo?alt=media&token=4e4b0be6-747e-4560-b553-3f17048f96b0) no-repeat center center; background-size: cover;, Routific, Route Optimization for Delivery Businesses
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-lever%2Flogo?alt=media&token=dcb899d1-2694-48aa-a9a4-ad4ad72cc344) no-repeat center center; background-size: cover;, Lever, Modern Applicant Tracking System
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-range%2Flogo?alt=media&token=dacc4356-4221-47f3-89f6-aac019db4e92) no-repeat center center; background-size: cover;, Range, Team-Coordination Software for High-Performance Cultures
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-backerkit%2Flogo?alt=media&token=3e1afed9-68cc-453d-9482-bb7498496123) no-repeat center center; background-size: cover;, BackerKit, Commerce and Backer Management for Crowdfunding
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-coinbase%2Flogo?alt=media&token=c2f02ea7-c86b-4234-9973-a0d2c685f531) no-repeat center center; background-size: cover;, Coinbase, Create an open financial system for the world
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-clearbrain%2Flogo?alt=media&token=9412c98d-9177-4603-b670-d71adea4345e) no-repeat center center; background-size: cover;, ClearBrain, Self Service Predictive Audiences for Marketers
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-gusto%2Flogo?alt=media&token=9415e196-7863-45f9-8138-3f6837620bcb) no-repeat center center; background-size: cover;, Gusto, Payroll, Benefits, and HR for Modern Companies
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-meadow%2Flogo?alt=media&token=793970a8-393a-4623-89b1-7ff55d61de1e) no-repeat center center; background-size: cover;, Meadow, Cannabis SaaS and Point of Sale
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-medium%2Flogo?alt=media&token=5d883eaf-d53f-4644-8308-58c9f499249c) no-repeat center center; background-size: cover;, Medium, Online Publishing Platform
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fthread%2Flogo?alt=media&token=54b0552e-416f-435a-a15f-222016389ce1) no-repeat center center; background-size: cover;, Thread, Free, Online Personal Styling Service for Men
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-angaza%2Flogo?alt=media&token=c09eb7c2-f7ff-436b-8fb8-352343d3e818) no-repeat center center; background-size: cover;, Angaza, Affordable clean energy for the planet’s poorest billion
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fconnected%2Flogo?alt=media&token=2eced42b-e3a7-4e30-9eb9-bb61519eb7ce) no-repeat center center; background-size: cover;, Connected, Software Product Development Firm
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-treasury-prime%2Flogo?alt=media&token=25e7c30e-988a-4111-a2d2-9714d1d79ac5) no-repeat center center; background-size: cover;, Treasury Prime, The easiest way for a developer to integrate with a bank.
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-labgenius%2Flogo?alt=media&token=0eaaf30e-db25-45c8-ac7a-ff7e96b9b16a) no-repeat center center; background-size: cover;, LabGenius, Harnessing evolution with AI
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-hustle%2Flogo?alt=media&token=4aba64c3-e6b0-4752-a131-d03082059660) no-repeat center center; background-size: cover;, Hustle, Peer-to-Peer Text Messaging Platform
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fnylas%2Flogo?alt=media&token=3919a7ca-c452-41c6-ba05-b60014fb4a7e) no-repeat center center; background-size: cover;, Nylas, Modern REST API for email, contacts, and calendar
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsensor-tower%2Flogo?alt=media&token=1bb234ae-1291-4bef-9874-ecedcb79b35e) no-repeat center center; background-size: cover;, Sensor Tower, Mobile App Intelligence
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-armory%2Flogo?alt=media&token=c8dfb7ee-2aa3-4b8e-b120-c4aaa7918983) no-repeat center center; background-size: cover;, Armory, Enabling software teams to ship better software, faster
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-redbubble%2Flogo?alt=media&token=e7b1fe27-b4ab-4669-ab18-f5d5428bff0a) no-repeat center center; background-size: cover;, Redbubble, Find awesome products designed by independent artists.
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-nerdwallet%2Flogo?alt=media&token=ef613100-5678-4312-90ec-101707d1cafd) no-repeat center center; background-size: cover;, NerdWallet, Personalized Finance
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-papercup%2Flogo?alt=media&token=1c8bdaa7-d04e-48e1-a8ae-22f66c5a15b7) no-repeat center center; background-size: cover;, Papercup, Translating the World’s Videos
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-monograph%2Flogo?alt=media&token=4fc28ab7-04f4-4959-91d7-95ff65049e06) no-repeat center center; background-size: cover;, Monograph, Time Tracking and Project Planning for Architects
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-peergrade%2Flogo?alt=media&token=3be61a27-afad-4acb-b32e-d2ac23004dd2) no-repeat center center; background-size: cover;, Peergrade, Peer Feedback for Teachers and Students
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-checkr%2Flogo?alt=media&token=c9df005e-dc75-496f-8cf1-79eb95d2f1cf) no-repeat center center; background-size: cover;, Checkr, API for Background Checks
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fbraze%2Flogo?alt=media&token=f530b877-7f8f-4712-a011-043178ceb502) no-repeat center center; background-size: cover;, Braze, Mobile Marketing CRM
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fhigh-wheel-software%2Flogo?alt=media&token=c6a3c5dd-aecd-4818-9bfb-50a8fad820e6) no-repeat center center; background-size: cover;, High Wheel Software, Outsourced Software Development Teams
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-position-development%2Flogo?alt=media&token=9a83235f-a829-4e9c-adfd-1c64da363903) no-repeat center center; background-size: cover;, Position Development, Worker-Run Development Shop
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fgithub%2Flogo?alt=media&token=42c8f9ae-07d0-44e2-94e0-1e11c0f60cbe) no-repeat center center; background-size: cover;, GitHub, Distributed Revision Control and Source Code Management
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Frelay-network%2Flogo?alt=media&token=8ac44145-29d3-4268-a716-7b5005f88172) no-repeat center center; background-size: cover;, Relay Network, Mobile Engagement Automation Platform
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fvoiceops%2Flogo?alt=media&token=47e6bd16-6112-4017-be2d-e2c2d834ca6f) no-repeat center center; background-size: cover;, VoiceOps, AI-Powered Analytics for Sales Calls
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fasana%2Flogo?alt=media&token=56eef015-f1d9-4c39-9d9e-962fd457f235) no-repeat center center; background-size: cover;, Asana, Team Project Management
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Feaze%2Flogo?alt=media&token=68b1a217-9e7e-436d-b97c-46dc65b61cc7) no-repeat center center; background-size: cover;, Eaze, Marijuana Delivery
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fworkmarket%2Flogo?alt=media&token=15af46eb-7e2d-4b47-9fac-3767c2990786) no-repeat center center; background-size: cover;, WorkMarket, Labor Automation Cloud Platform
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fbranch%2Flogo?alt=media&token=d1398a0d-51e5-4bd4-ba6a-79730eea81e5) no-repeat center center; background-size: cover;, Branch, Building the future of mobile app discovery with deep links
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fblockstack%2Flogo?alt=media&token=59bea785-9d84-48a4-b6cb-b71eb5a07127) no-repeat center center; background-size: cover;, Blockstack, Decentralized Internet and Developer Platform
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fremix%2Flogo?alt=media&token=a80dae3f-61a8-4ed7-a6d1-686d6a557e26) no-repeat center center; background-size: cover;, Remix, Planning Platform for Public Transit
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Floylap%2Flogo?alt=media&token=6a48cfa0-b7a6-47c8-b188-dfac2ef02955) no-repeat center center; background-size: cover;, Loylap, Payment Rewards
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fmindmatters%2Flogo?alt=media&token=2845b90b-a388-42db-8339-02b448bb57d2) no-repeat center center; background-size: cover;, mindmatters, Digital Products for Mobile and Web
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fg-adventures%2Flogo?alt=media&token=49386f81-5e9e-48e2-a57a-cd4ac234aa8d) no-repeat center center; background-size: cover;, G Adventures, Small Group Adventure Travel
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Falto%2Flogo?alt=media&token=01de8a88-1480-4e89-9985-55a435116853) no-repeat center center; background-size: cover;, Alto, Modern Pharmacy for Prescription Deliveries
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fcoffee-meets-bagel%2Flogo?alt=media&token=41006d99-e3eb-4d1c-b7f4-9d0b348245f5) no-repeat center center; background-size: cover;, Coffee Meets Bagel, Online Dating App
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fpostmates%2Flogo?alt=media&token=0c60fa96-70e5-4253-9da0-b8f5f5ff5a67) no-repeat center center; background-size: cover;, Postmates, On-Demand Delivery
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsportsrecruits%2Flogo?alt=media&token=fdf6a7c9-c5fd-463a-903b-8880fae28748) no-repeat center center; background-size: cover;, SportsRecruits, Recruiting Platform for College-Bound Student-Athletes
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fbox%2Flogo?alt=media&token=f3c75414-a1ce-4ab7-b2a5-aedea8cc6df5) no-repeat center center; background-size: cover;, Box, Enterprise Cloud Storage
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fmedisas%2Flogo?alt=media&token=ebfaae11-484d-4ee9-b61f-fc53d9eee80e) no-repeat center center; background-size: cover;, Medisas, Hospital Workflow and Collaboration Software
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fparabol%2Flogo?alt=media&token=e760a00b-440b-40eb-a308-0b7b274e6956) no-repeat center center; background-size: cover;, Parabol, Cross-Functional Team Collaboration Software
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fgoodeggs%2Flogo?alt=media&token=e7027157-1008-4aba-a604-d1595a0b5396) no-repeat center center; background-size: cover;, Good Eggs, Local, Organic Groceries Delivered
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsonar%2Flogo?alt=media&token=6edcdb92-1592-4ed2-b39c-98fb1ce83fb2) no-repeat center center; background-size: cover;, Sonar, Mobile Communication for Business
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fdatafox%2Flogo?alt=media&token=1b143254-651f-4424-bf14-2f4dcbf63c94) no-repeat center center; background-size: cover;, DataFox, Company data powered by AI
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fpicnichealth%2Flogo?alt=media&token=a57ac699-c94e-4d38-b109-eb1aa9601f35) no-repeat center center; background-size: cover;, PicnicHealth, Training Data for Precision Medicine
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fhonor%2Flogo?alt=media&token=8daa0d44-a3bd-4b85-9098-0ffa77f7af89) no-repeat center center; background-size: cover;, Honor, In Home Care Services
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Falgolia%2Flogo?alt=media&token=50cec689-2b80-4ad2-8e0c-23d8183738e9) no-repeat center center; background-size: cover;, Algolia, Search API Platform
+
+background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Feden%2Flogo?alt=media&token=be3e919f-5643-4335-b3ef-5dc4321fc899) no-repeat center center; background-size: cover;, Eden, Office Management Platform

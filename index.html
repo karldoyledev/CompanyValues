@@ -1,0 +1,239 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/material-components-web/dist/material-components-web.min.js"></script>
+    <script src= "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="./node_modules/systemjs/dist/system.js"></script> -->
+    <script src="./main.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+    <div class="cv-toolbar mdc-toolbar">
+        <div class="cv-container mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start cv-toolbar__section--center--align">
+                <span class="cv-toolbar-tech-stack">&nbspTechStack&nbsp</span> &nbsp Recruitment
+            </section>
+            <section class="mdc-toolbar__section mdc-toolbar__section--shrink-to-fit mdc-toolbar__section--align-end cv-toolbar__section--center--align ">
+                Blog
+            </section>
+            <section class="mdc-toolbar__section mdc-toolbar__section--shrink-to-fit mdc-toolbar__section--align-end cv-toolbar__section--center--align">
+                About
+            </section>
+        </div>
+    </div>
+    <section class="cv-hero">
+        <div class="cv-hero__title">
+            Find companies that match your skills
+        </div>
+        <div class="cv-hero__subtitle">
+            Select the skills that you have that match with what companies are looking for.
+        </div>
+        <div id='tech-stack' class="cv-stack-container">
+        </div>
+    </section>
+
+    <div id="company-cards" class="cv-card-list">
+    </div>
+</body>
+<script>
+
+    var techStack = [
+        ["Backend", [".Net", "Java", "Ruby", "Node", "Go", "PHP"]],
+        ["Frontend", ["Angular", "React", "Vue", "Knockout", "Ember", "Aurelia"]],
+        ["Mobile", ["Android", "IOS", "React Native", "Ionic", "Swift", "Flutter", "Xamerin"]],
+        ["Platform", ["Azure", "AWS", "SalesForce", "Google Cloud", "OnPrem"]],
+        ["DevOps", ["Linux", "Windows", "Docker", "Kubernetes", "Chef", "Jenkins", "OctopusDeploy", "Team City"]] 
+    ];
+    var cardData = [
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-webflow%2Flogo?alt=media&token=12decd85-9d32-40a4-8179-37708f3e81c4) no-repeat center center; background-size: cover;", "Webflow", "Responsive web design tool, CMS, and hosting platform", ['.Net', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fcarbon-five%2Flogo?alt=media&token=9593b35f-b3f9-4de6-b3a2-19d127a27cf2) no-repeat center center; background-size: cover;", "Carbon Five", "Agile Product Development Consultancy", ['Go', 'PHP'], ['React', 'Ember'], [''], ['OnPrem'], ['Linux', 'Chef', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Frainforest%2Flogo?alt=media&token=59745ca2-aef8-4006-ad97-770ba9244b67) no-repeat center center; background-size: cover;", "Rainforest QA", "QA Testing at the Speed of Development", ['Node', 'Ruby'], ['Knockout', 'Aurelia'], ['IOS','React Native'], ['AWS'], ['Google Cloud', 'Kubernetes', 'Linux']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-zeus%2Flogo?alt=media&token=0126de73-f4d5-450b-8212-44e7ac104f0c) no-repeat center center; background-size: cover;", "Zeus", "Modern Property Manager of Corporate Housing", ['.Net'], ['Angular'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwove%2Flogo?alt=media&token=ddf2dd13-5f87-4e61-97c5-5a7c5285a345) no-repeat center center; background-size: cover;", "Wove", "Data Sharing Partnerships for Marketers", ['Java'], ['Aurelia'], ['Flutter'], ['AWS'], ['Linux', 'Docker']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fflatiron%2Flogo?alt=media&token=d036db7f-20ea-4792-9982-766844981eb8) no-repeat center center; background-size: cover;", "Flatiron", "Oncology Data for Accelerated Research", ['.Net', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'OctopusDeploy', 'TeamCity']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-precious%2Flogo?alt=media&token=5e839e88-ecb0-4ea9-93ed-dfec440bcd8b) no-repeat center center; background-size: cover;", "Precious", "AI to Organize Your Photos of Your Kids", ['Ruby', 'Java', 'Node'], ['React', 'Angular'], ['Ionic'], ['OnPrem'], ['Linux', 'Chef']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fy-combinator%2Flogo?alt=media&token=c7dc79e8-cd0c-418a-b861-fca9de2acb3e) no-repeat center center; background-size: cover;", "Y Combinator", "Seed Funding for Startups", ['Node'], ['React'], ['React Native'], ['AWS'], ['Linux', 'Chef', 'Docker']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fbitexpert%2Flogo?alt=media&token=5c512344-3939-4b3d-b645-eda9bb21fb7c) no-repeat center center; background-size: cover;", "bitExpert AG", "Custom Software Solutions", ['Node'], ['Knockout'], ['Swift', 'IOS'], ['AWS'], ['Linux', 'Kubernetes']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Freddit%2Flogo?alt=media&token=62416502-9b20-4e80-b98b-5e7fbf288004) no-repeat center center; background-size: cover;", "Reddit", "Online Media and Content Platform", ['.Net', 'Node'], ['Knockout'], ['Android'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fstitch-fix%2Flogo?alt=media&token=b694a870-ac1b-475a-97c4-a2f9e48eba56) no-repeat center center; background-size: cover;", "Stitch Fix", "Personal Style Service", ['.Net', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fgrammarly%2Flogo?alt=media&token=05ea705f-27a1-4a7d-865b-d4460ff1415a) no-repeat center center; background-size: cover;", "Grammarly", "AI-Powered Communications Assistant", ['.Net', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsignal%2Flogo?alt=media&token=5ee3fdb2-18f5-4693-9567-0a6fd8e5368d) no-repeat center center; background-size: cover;", "Signal", "Free, Open Source Private Messaging", ['PHP', 'Java'], [''], [''], ['SalesForce'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fcareguide%2Flogo?alt=media&token=8645b6ec-f0e4-4889-9469-d6f0d7aa36f1) no-repeat center center; background-size: cover;", "CareGuide", "Marketplace for Local Care Services", ['.Net', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fjane%2Flogo?alt=media&token=a2b6308e-f901-4f70-8c1b-917898e99a6e) no-repeat center center; background-size: cover;", "Jane", "Real-Time Cannabis Marketplace", ['Node'], ['React'], ['React Native'], ['AWS'], ['Linux', 'Chef', 'Docker']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fdia%26co%2Flogo?alt=media&token=5d97ee1b-5cc7-4614-b0b9-9a025a0eb1c7) no-repeat center center; background-size: cover;", "Dia&amp;Co", "Subscription Styling Service for Sizes 14+", ['PHP'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fvin65%2Flogo?alt=media&token=49e67e5e-739f-4864-b766-74e3eba7b5f0) no-repeat center center; background-size: cover;", "WineDirect", "Winery Fulfillment, Ecommerce, and POS", ['', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-flexport%2Flogo?alt=media&token=637e4869-1dbf-416b-a631-3e6f1fda55a9) no-repeat center center; background-size: cover;", "Flexport", "Leading Software-Powered Freight Forwarder", ['.Net'], ['Knockout'], ['Xamerin'], ['Azure'], ['Windows', 'OctopusDeploy', 'TeamCity']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fatlas%2Flogo?alt=media&token=96a71cc1-3fa2-4a55-ae7a-95a7f999e539) no-repeat center center; background-size: cover;", "Atlas", "Custom Software Applications", ['Node', 'Ruby'], ['Knockout', 'Aurelia'], ['IOS','React Native'], ['AWS'], ['Google Cloud', 'Kubernetes', 'Linux']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Finntopia%2Flogo?alt=media&token=68c5792c-d063-427a-877e-a4ec49522e4f) no-repeat center center; background-size: cover;", "Inntopia", "Travel Reservation Technology", ['PHP', 'Java'], ['React'], ['Xamerin'], ['Azure'], ['Windows', 'Jenkins']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fsamsara%2Flogo?alt=media&token=043cdb7d-5db6-40cb-a187-6697f2e6fa40) no-repeat center center; background-size: cover;", "Samsara", "IoT Sensors + Software for Operations", ['Java'], ['Aurelia'], ['Flutter'], ['AWS'], ['Linux', 'Docker']],
+        ["background: url(https://firebasestorage.googleapis.com/v0/b/key-values-development.appspot.com/o/images%2Fwip-hipcamp%2Flogo?alt=media&token=1b0c6509-f1fe-4ab1-92a8-acbd0954fd28) no-repeat center center; background-size: cover;", "Hipcamp", "Find yourself outside", ['Ruby', 'Java', 'Node'], ['React', 'Angular'], ['Ionic'], ['OnPrem'], ['Linux', 'Chef']]];
+
+
+    mdc.autoInit();
+    var renderedCards = "";
+
+    for (var i = 0; i < cardData.length; i++) {
+        var data = cardData[i];
+        renderedCards += renderCard(data);
+    }
+
+    insertRenderedCards("company-cards", renderedCards);
+
+    var renderedStacks = "";
+
+    for (var i = 0; i < techStack.length; i++) {
+        renderedStacks += renderStack(techStack[i][0], techStack[i][1]);
+    }    
+    insertRenderedStacks("tech-stack", renderedStacks);
+
+    const chipSetElements = document.querySelectorAll('.mdc-chip-set');
+    for (var i = 0; i < chipSetElements.length; i++) {
+        var chipSetElement = chipSetElements[i]
+        var chipset = new mdc.chips.MDCChipSet.attachTo(chipSetElement);
+    }    
+
+
+    //    // Get all buttons with the name 'all' and store in a NodeList called 'buttons'
+    // var buttons = document.getElementsByClassName('cv-stack-button');
+
+    // // Loop through NodeList and call the click() function on each button
+    // for(var i = 0; i < buttons.length; i++)  
+    // {
+    //     buttons[i].addEventListener('click', function(event) {
+    //     var target = event.target || event.srcElement;
+
+    //     alert(target.innerHTML); 
+    //     });
+    // }
+    var selectedSkillsArray = [];
+
+    $(".cv-card--toggle-off").mouseenter(function(event)
+    {
+        var card = event.target || event.srcElement;
+        for(let sibling of getSiblings(card))
+        {
+            sibling.style = "display: flex";
+        }    
+
+        card.style = "display: none"      
+    }); 
+
+
+    $(".cv-card--toggle-on").mouseleave(function(event)
+    {
+        var card = event.target || event.srcElement;
+        for(let sibling of getSiblings(card))
+        {
+            sibling.style = "display: flex";
+        }    
+
+        card.style = "display: none"     
+    });    
+
+    $(".cv-stack-button").click(function(event){
+        var target = event.target || event.srcElement;
+
+        clickedSkill = target.innerHTML;
+
+        // remove if already in list
+        if(selectedSkillsArray.includes(target.innerHTML))
+        {
+            selectedSkillsArray.splice(selectedSkillsArray.indexOf(target.innerHTML), 1 );
+        }
+        else
+        {
+            selectedSkillsArray.push(target.innerHTML)
+        }     
+
+        var visibleCardsVM = [];
+        for(var i =0; i < cardData.length; i++)
+        {
+            if(doesCardMatchesSkills(cardData[i])){
+                visibleCardsVM.push(cardData[i]);
+            }
+        }
+        
+        hideNotSelectedCards(visibleCardsVM);
+
+        toggleSelectedAttribute(target);
+    });
+
+    function doesCardMatchesSkills(currentCardModel)
+    {
+        var backend = currentCardModel[3];
+        var frontend = currentCardModel[4];
+        var mobile = currentCardModel[5];
+        var platform = currentCardModel[6];
+        var devops = currentCardModel[7];
+
+        var answer = true;
+        for(var index = 0; index  < selectedSkillsArray.length; index++)
+        {
+            var skill = selectedSkillsArray[index];
+
+            answer &= (backend.includes(skill)  ||
+                        frontend.includes(skill) ||
+                        mobile.includes(skill)   ||
+                        platform.includes(skill) ||
+                        devops.includes(skill));        
+        }    
+        
+        return answer;
+    }
+
+    function hideNotSelectedCards(visibleCardsVM)
+    {
+        var cardElements = document.getElementsByClassName('cv-card cv-card--skill-front');
+        for (let cardElement of cardElements)
+        {
+            var companyName = cardElement.querySelector('.cv-card__company-name').innerHTML;
+            if(containsCompany(visibleCardsVM, companyName))
+            {
+                cardElement.style.display = 'flex'
+                cardElement.parentElement.style.display = 'block'
+            }
+            else
+            {
+                cardElement.style.display = 'none'
+                cardElement.parentElement.style.display = 'none'
+            }
+        }
+    }
+
+    function toggleSelectedAttribute(target)
+    {
+        target.classList.toggle('cv-stack-button--selected');
+    }
+
+    function containsCompany(visibleCardModels, companyName)
+    {
+        for(let model of visibleCardModels)
+        {
+            if(model[1] === companyName)
+            return true; 
+        }
+
+        return false; 
+    }
+
+    function getChildren(n, skipMe){
+        var r = [];
+        for ( ; n; n = n.nextSibling ) 
+        if ( n.nodeType == 1 && n != skipMe)
+            r.push( n );        
+        return r;
+    };
+
+    function getSiblings(n) {
+        return getChildren(n.parentNode.firstChild, n);
+    }    
+</script>
+
+</html>
